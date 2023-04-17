@@ -2,4 +2,5 @@
     <string name="app_name">TodoApp</string>
     <string name="todo_title">Bienvenido, Aris</string>
     <string name="todo_categories">Categorías:</string>
+    <string name="todo_tasks">Tareas:</string>
 </resources>
