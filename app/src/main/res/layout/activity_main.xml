@@ -27,7 +27,9 @@
             style="@style/TodoSubtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
             android:text="@string/todo_categories" />
+
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvCategories"
@@ -38,6 +40,7 @@
             style="@style/TodoSubtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
             android:layout_marginTop="32dp"
             android:text="@string/todo_tasks" />
 
@@ -49,19 +52,18 @@
             android:layout_marginTop="16dp" />
 
 
-
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabAddTask"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:backgroundTint="@color/todo_accent"
-        app:tint="@color/white"
-        app:fabSize="normal"
         android:layout_gravity="end|bottom"
+        android:layout_margin="32dp"
         android:src="@android:drawable/ic_input_add"
-        android:layout_margin="32dp"/>
+        app:backgroundTint="@color/todo_accent"
+        app:fabSize="normal"
+        app:tint="@color/white" />
 
 
 </FrameLayout>

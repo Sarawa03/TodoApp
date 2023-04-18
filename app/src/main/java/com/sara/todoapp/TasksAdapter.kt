@@ -16,7 +16,7 @@ class TasksAdapter(var tasks: List<Task>, private val onTaskSelected: (Int) -> U
 
     override fun onBindViewHolder(holder: TasksViewHolder, position: Int) {
         holder.render(tasks[position])
-        holder.itemView.setOnClickListener{onTaskSelected(position)}
+        holder.itemView.setOnClickListener { onTaskSelected(position) }
         //onTaskSelected(position)
 
     }

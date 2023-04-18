@@ -1,4 +1,5 @@
 package com.sara.todoapp
+
 import android.content.res.ColorStateList
 import android.graphics.Paint
 import android.view.View
@@ -14,14 +15,14 @@ class TasksViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
     fun render(task: Task) {
         tvTask.text = task.name
-        if(task.isSelected){
+        if (task.isSelected) {
             tvTask.paintFlags = tvTask.paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
-        }else{
+        } else {
             tvTask.paintFlags = tvTask.paintFlags and Paint.STRIKE_THRU_TEXT_FLAG.inv()
         }
         cbTask.isChecked = task.isSelected
 
-        val color = when(task.category){
+        val color = when (task.category) {
             TaskCategory.Business -> R.color.todo_business_category
             TaskCategory.Other -> R.color.todo_other_category
             TaskCategory.Personal -> R.color.todo_personal_category
